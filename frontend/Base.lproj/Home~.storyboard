@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ojg-Qg-Xd0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Accuratist.ttf">
+            <string>Accuratist</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oB0-PE-ASj">
+            <objects>
+                <viewController id="pwq-W1-TNv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sxi-Ei-wuA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-Au-khS">
+                                <rect key="frame" x="0.0" y="573" width="375" height="94"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.38431372549019605" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="32"/>
+                                <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="REGISTER">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LCM-ow-cyh" kind="custom" customClass="SegueFromRight" customModule="eventsProject" customModuleProvider="target" id="sLQ-od-fok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elv-90-SeR">
+                                <rect key="frame" x="0.0" y="479" width="375" height="94"/>
+                                <color key="backgroundColor" red="0.96993559600000001" green="0.81579386274781496" blue="0.10561619511619097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="aHI-6D-Dp5"/>
+                                    <constraint firstAttribute="width" constant="375" id="x2y-vH-CZO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="32"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ofx-Bd-Vm4" kind="custom" customClass="SegueFromRight" customModule="eventsProject" customModuleProvider="target" id="kpM-ZC-Etm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.28235294117647058" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nud-Au-khS" firstAttribute="leading" secondItem="elv-90-SeR" secondAttribute="leading" id="0Kz-26-B26"/>
+                            <constraint firstItem="Nud-Au-khS" firstAttribute="bottom" secondItem="b7h-Z0-Bm8" secondAttribute="bottom" id="2N7-y0-Meg"/>
+                            <constraint firstItem="Nud-Au-khS" firstAttribute="top" secondItem="elv-90-SeR" secondAttribute="bottom" id="Dit-vx-KIu"/>
+                            <constraint firstItem="Nud-Au-khS" firstAttribute="trailing" secondItem="elv-90-SeR" secondAttribute="trailing" id="Ykp-fU-pAb"/>
+                            <constraint firstItem="b7h-Z0-Bm8" firstAttribute="bottom" secondItem="elv-90-SeR" secondAttribute="bottom" constant="94" id="eM9-yt-iaV"/>
+                            <constraint firstItem="elv-90-SeR" firstAttribute="centerX" secondItem="b7h-Z0-Bm8" secondAttribute="centerX" id="wre-5O-FLp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b7h-Z0-Bm8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BAc-3W-Qic"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHc-qE-1Ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1988" y="-433"/>
+        </scene>
+        <!--Register View-->
+        <scene sceneID="ApK-lk-iRL">
+            <objects>
+                <viewController id="LCM-ow-cyh" customClass="RegisterView" customModule="eventsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHx-z8-UHT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OE-HH-Po1">
+                                <rect key="frame" x="107" y="76" width="161" height="44"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aa4-2j-aUB">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="izu-FR-waO">
+                                <rect key="frame" x="16" y="174" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="MQt-RE-7x2">
+                                <rect key="frame" x="16" y="212" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tP-kh-MtI">
+                                <rect key="frame" x="99" y="260" width="177" height="47"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.38431372549019605" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="TAP-aA-Qm2"/>
+                                    <constraint firstAttribute="width" constant="177" id="Z8S-ee-AIS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="25"/>
+                                <state key="normal" title="JOIN &amp; ACCEPT">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="9OE-HH-Po1" firstAttribute="top" secondItem="cI3-pb-lbM" secondAttribute="top" constant="56" id="3PC-u9-pRe"/>
+                            <constraint firstItem="izu-FR-waO" firstAttribute="trailing" secondItem="MQt-RE-7x2" secondAttribute="trailing" id="6iQ-pL-Fd7"/>
+                            <constraint firstItem="5tP-kh-MtI" firstAttribute="centerX" secondItem="MQt-RE-7x2" secondAttribute="centerX" id="BZS-DW-Gh1"/>
+                            <constraint firstItem="5tP-kh-MtI" firstAttribute="top" secondItem="MQt-RE-7x2" secondAttribute="bottom" constant="18" id="BgV-jj-8iw"/>
+                            <constraint firstItem="aa4-2j-aUB" firstAttribute="trailing" secondItem="izu-FR-waO" secondAttribute="trailing" id="DNd-vJ-lGj"/>
+                            <constraint firstItem="aa4-2j-aUB" firstAttribute="leading" secondItem="YHx-z8-UHT" secondAttribute="leadingMargin" id="Jcz-gp-TKG"/>
+                            <constraint firstItem="izu-FR-waO" firstAttribute="leading" secondItem="MQt-RE-7x2" secondAttribute="leading" id="UwK-7v-CK5"/>
+                            <constraint firstItem="aa4-2j-aUB" firstAttribute="top" secondItem="9OE-HH-Po1" secondAttribute="bottom" constant="16" id="WIv-JI-6zR"/>
+                            <constraint firstItem="aa4-2j-aUB" firstAttribute="leading" secondItem="izu-FR-waO" secondAttribute="leading" id="YKu-C2-AvL"/>
+                            <constraint firstItem="izu-FR-waO" firstAttribute="top" secondItem="aa4-2j-aUB" secondAttribute="bottom" constant="8" symbolic="YES" id="a4w-H5-ovA"/>
+                            <constraint firstItem="9OE-HH-Po1" firstAttribute="centerX" secondItem="aa4-2j-aUB" secondAttribute="centerX" id="d4p-fb-dwm"/>
+                            <constraint firstItem="MQt-RE-7x2" firstAttribute="top" secondItem="izu-FR-waO" secondAttribute="bottom" constant="8" symbolic="YES" id="dDD-RY-n46"/>
+                            <constraint firstItem="aa4-2j-aUB" firstAttribute="trailing" secondItem="YHx-z8-UHT" secondAttribute="trailingMargin" id="wNS-6n-ddB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cI3-pb-lbM"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Bc9-Ad-etr" appends="YES" id="WZg-s7-hL0"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="emailTF" destination="izu-FR-waO" id="B8v-iZ-JVW"/>
+                        <outlet property="passwordTF" destination="MQt-RE-7x2" id="fA8-vn-4ju"/>
+                        <outlet property="registerButton" destination="5tP-kh-MtI" id="mmn-Mv-a2r"/>
+                        <outlet property="usernameTF" destination="aa4-2j-aUB" id="cLR-CR-geN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqx-NH-h9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Bc9-Ad-etr">
+                    <connections>
+                        <segue destination="pwq-W1-TNv" kind="custom" customClass="SegueFromLeft" customModule="eventsProject" customModuleProvider="target" id="37x-fO-qse"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-975" y="-66"/>
+        </scene>
+        <!--Login View-->
+        <scene sceneID="aaU-qj-RHD">
+            <objects>
+                <viewController id="ofx-Bd-Vm4" customClass="LoginView" customModule="eventsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vvI-nV-YeT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username or e-mail" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="sE7-Mg-H8R">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Mp-o1-DA8">
+                                <rect key="frame" x="16" y="174" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttO-DT-8ff">
+                                <rect key="frame" x="131" y="209" width="114" height="32"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="17"/>
+                                <state key="normal" title="Forgot password?">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v3T-w7-vBh" kind="show" id="NwX-uj-ugF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-ZD-VfZ">
+                                <rect key="frame" x="99" y="249" width="177" height="47"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.81568627450980391" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="30"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVh-lx-jFR">
+                                <rect key="frame" x="134" y="76" width="109" height="44"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ttO-DT-8ff" firstAttribute="top" secondItem="7Mp-o1-DA8" secondAttribute="bottom" constant="5" id="4sG-LI-fhL"/>
+                            <constraint firstItem="MKr-ZD-VfZ" firstAttribute="top" secondItem="ttO-DT-8ff" secondAttribute="bottom" constant="8" symbolic="YES" id="6Tl-Si-3Zk"/>
+                            <constraint firstItem="sE7-Mg-H8R" firstAttribute="top" secondItem="iVh-lx-jFR" secondAttribute="bottom" constant="16" id="DDM-ey-ewG"/>
+                            <constraint firstItem="7Mp-o1-DA8" firstAttribute="centerX" secondItem="ttO-DT-8ff" secondAttribute="centerX" id="KyG-2B-yVg"/>
+                            <constraint firstItem="sE7-Mg-H8R" firstAttribute="leading" secondItem="vvI-nV-YeT" secondAttribute="leadingMargin" id="NuP-UM-3SY"/>
+                            <constraint firstItem="MKr-ZD-VfZ" firstAttribute="leading" secondItem="Kw9-bR-yb4" secondAttribute="leading" constant="99" id="Pv3-Ow-c4P"/>
+                            <constraint firstItem="sE7-Mg-H8R" firstAttribute="leading" secondItem="7Mp-o1-DA8" secondAttribute="leading" id="chB-yF-Jem"/>
+                            <constraint firstItem="iVh-lx-jFR" firstAttribute="top" secondItem="Kw9-bR-yb4" secondAttribute="top" constant="56" id="ggY-Nw-s3W"/>
+                            <constraint firstItem="sE7-Mg-H8R" firstAttribute="trailing" secondItem="7Mp-o1-DA8" secondAttribute="trailing" id="i83-yi-5ET"/>
+                            <constraint firstItem="ttO-DT-8ff" firstAttribute="centerX" secondItem="MKr-ZD-VfZ" secondAttribute="centerX" id="jL1-f4-PBn"/>
+                            <constraint firstItem="iVh-lx-jFR" firstAttribute="centerX" secondItem="ttO-DT-8ff" secondAttribute="centerX" id="mmh-vG-dle"/>
+                            <constraint firstItem="sE7-Mg-H8R" firstAttribute="trailing" secondItem="vvI-nV-YeT" secondAttribute="trailingMargin" id="rMk-Dg-sVH"/>
+                            <constraint firstItem="7Mp-o1-DA8" firstAttribute="top" secondItem="sE7-Mg-H8R" secondAttribute="bottom" constant="8" symbolic="YES" id="xNR-Ye-PVc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kw9-bR-yb4"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lWd-BM-w9H" appends="YES" id="BUI-yF-aD0"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="MKr-ZD-VfZ" id="VPR-a9-3u1"/>
+                        <outlet property="passwordTF" destination="7Mp-o1-DA8" id="JyL-lg-Ayu"/>
+                        <outlet property="usernameTF" destination="sE7-Mg-H8R" id="gwc-fE-BZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6I-6m-5pM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="lWd-BM-w9H">
+                    <connections>
+                        <segue destination="pwq-W1-TNv" kind="custom" customClass="SegueFromLeft" customModule="eventsProject" customModuleProvider="target" id="Fqn-AK-95i"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-975.20000000000005" y="-784.85757121439292"/>
+        </scene>
+        <!--Reset Password View-->
+        <scene sceneID="SDU-mI-exu">
+            <objects>
+                <viewController id="v3T-w7-vBh" customClass="ResetPasswordView" customModule="eventsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0C-gh-2ua">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESET PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cus-GB-dOr">
+                                <rect key="frame" x="47" y="68" width="281" height="44"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New password" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="DdE-zn-7LK">
+                                <rect key="frame" x="16" y="138" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ohm-bc-LH8">
+                                <rect key="frame" x="16" y="176" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcp-FZ-NzJ">
+                                <rect key="frame" x="99" y="223" width="177" height="47"/>
+                                <color key="backgroundColor" red="0.91921168565750122" green="0.19306684021699649" blue="0.055508642177405164" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="30"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cus-GB-dOr" firstAttribute="top" secondItem="Asc-zh-eyb" secondAttribute="top" constant="48" id="0lm-qB-KYO"/>
+                            <constraint firstItem="DdE-zn-7LK" firstAttribute="trailing" secondItem="ohm-bc-LH8" secondAttribute="trailing" id="4J9-OH-6eQ"/>
+                            <constraint firstItem="DdE-zn-7LK" firstAttribute="trailing" secondItem="a0C-gh-2ua" secondAttribute="trailingMargin" id="Aco-cZ-uJo"/>
+                            <constraint firstItem="DdE-zn-7LK" firstAttribute="leading" secondItem="ohm-bc-LH8" secondAttribute="leading" id="Dd1-K7-HZy"/>
+                            <constraint firstItem="DdE-zn-7LK" firstAttribute="top" secondItem="cus-GB-dOr" secondAttribute="bottom" constant="26" id="RDy-1p-KYv"/>
+                            <constraint firstItem="ohm-bc-LH8" firstAttribute="centerX" secondItem="vcp-FZ-NzJ" secondAttribute="centerX" id="Sc1-cI-aEF"/>
+                            <constraint firstItem="cus-GB-dOr" firstAttribute="centerX" secondItem="DdE-zn-7LK" secondAttribute="centerX" id="cnD-0Z-sJ2"/>
+                            <constraint firstItem="vcp-FZ-NzJ" firstAttribute="leading" secondItem="Asc-zh-eyb" secondAttribute="leading" constant="99" id="gXK-bP-A8Q"/>
+                            <constraint firstItem="DdE-zn-7LK" firstAttribute="leading" secondItem="a0C-gh-2ua" secondAttribute="leadingMargin" id="h90-2k-Dm1"/>
+                            <constraint firstItem="ohm-bc-LH8" firstAttribute="top" secondItem="DdE-zn-7LK" secondAttribute="bottom" constant="8" symbolic="YES" id="hIh-jd-T8W"/>
+                            <constraint firstItem="vcp-FZ-NzJ" firstAttribute="top" secondItem="ohm-bc-LH8" secondAttribute="bottom" constant="17" id="oew-eY-JAS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Asc-zh-eyb"/>
+                    </view>
+                    <connections>
+                        <outlet property="newPasswordTF" destination="DdE-zn-7LK" id="aIz-Sa-hth"/>
+                        <outlet property="reenterPasswordTF" destination="ohm-bc-LH8" id="sJn-vY-lbL"/>
+                        <outlet property="resetButton" destination="vcp-FZ-NzJ" id="5QJ-nT-TJc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWR-vH-GRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="-785"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EoE-WJ-rK7">
+            <objects>
+                <tabBarController id="ojg-Qg-Xd0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dC4-rw-5VU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.090196078431372548" green="0.16862745098039217" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.035294117647058823" green="0.45882352941176469" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.72549019607843135" green="0.74901960784313726" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OUy-ao-KmS" kind="relationship" relationship="viewControllers" id="Y56-6P-q5D"/>
+                        <segue destination="O6n-8w-Jgv" kind="relationship" relationship="viewControllers" id="vFb-q8-ehz"/>
+                        <segue destination="tnO-3x-hqm" kind="relationship" relationship="viewControllers" id="xE2-Gw-WFV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qs-bm-gQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="-303"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="tXC-T8-lto">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favourites" id="OUy-ao-KmS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QAs-pe-fpp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXH-1k-jcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="193"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="O1b-uf-YN6">
+            <objects>
+                <viewController id="Z5v-3c-D6e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mke-HZ-ZqX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hqe-P5-LBo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="m4X-2I-tQU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qu5-jn-rAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1166" y="1137"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="MSm-JY-vBF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="O6n-8w-Jgv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LRd-UQ-uIM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cn-na-C3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2075" y="193"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="24q-2y-bfC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJi-yg-kTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tnO-3x-hqm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="tabBarItem:g4g-ic-UnL:image" id="g4g-ic-UnL"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eZB-in-fdv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z5v-3c-D6e" kind="relationship" relationship="rootViewController" id="45C-vL-LvO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1166" y="413"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBarItem:g4g-ic-UnL:image" width="25" height="25">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGVVZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
+ExQZHh8jJCsuMTtDR0tPUlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdz
+Vk5TUmVwc1dOU0NvbG9ygAKAERIgwAAAgAOAC1h7MjUsIDI1fdIVChYYWk5TLm9iamVjdHOhF4AEgArS
+FQoaHaIbHIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPEQzGTU0AKgAACcwA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADoAAACwAAAAPwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAADgAAAA/wAAAOUAAAA7AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQA
+AADfAAAA/wAAAP8AAAD/AAAA4wAAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADEAAADdAAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AADgAAAANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAC4AAADaAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAN0AAAAyAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAADYAAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA2wAAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAADXAAAAKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUA
+AADTAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANQA
+AAAmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAADQAAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA0AAAACMAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAACAAAADMAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADMAAAAIAAAAAAAAAAAAAAAAAAAABkAAADJAAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAMgAAAAaAAAAAAAAAAUAAACsAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAYA
+AABEAAAA+gAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAPoAAABCAAAAlAAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAAhQAAAKsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAJAA
+AACqAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/QAAAKAAAABnAAAAqwAAAP4A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACOAAAAqgAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAI4AAAAAAAAAAAAAAAEAAACcAAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAAjgAAAKoAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAPYA
+AAAuAAAAAAAAAAAAAAAAAAAAOwAAAPsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAI4A
+AACqAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADsAAAAIAAAAAAAAAAAAAAAAAAAAC0A
+AAD4AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACOAAAAqgAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA7QAAACEAAAAAAAAAAAAAAAAAAAAuAAAA+AAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAAjgAAAKoAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAO0A
+AAAhAAAAAAAAAAAAAAAAAAAALgAAAPgAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAI4A
+AACqAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADtAAAAIQAAAAAAAAAAAAAAAAAAAC4A
+AAD4AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACOAAAArgAAAP8AAAD+AAAA/gAAAP4A
+AAD+AAAA/gAAAP4AAAD/AAAA7wAAACIAAAAAAAAAAAAAAAAAAAAwAAAA+gAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAAkgAAAG8AAAD9AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANoA
+AAATAAAAAAAAAAAAAAAAAAAAHwAAAOsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/AAAAF4A
+AAADAAAAUQAAAG0AAABrAAAAawAAAGsAAABrAAAAawAAAGwAAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABGAAAAegAAAHkAAAB5AAAAeQAAAHkAAAB5AAAAewAAAFYAAAADABABAAADAAAAAQAZAAABAQADAAAA
+AQAZAAABAgADAAAABAAACpIBAwADAAAAAQABAAABBgADAAAAAQACAAABCgADAAAAAQABAAABEQAEAAAA
+AQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAEAAABFgADAAAAAQAZAAABFwAEAAAAAQAACcQBHAADAAAA
+AQABAAABKAADAAAAAQACAAABUgADAAAAAQABAAABUwADAAAABAAACpqHcwAHAAACJAAACqIAAAAAAAgA
+CAAIAAgAAQABAAEAAQAAAiRhcHBsBAAAAG1udHJSR0IgWFlaIAfhAAcABwANABYAIGFjc3BBUFBMAAAA
+AEFQUEwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbMoalYIlfxBNOJkT1dHqFYIAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACmRlc2MAAAD8AAAAZWNwcnQAAAFkAAAAI3d0cHQAAAGIAAAA
+FHJYWVoAAAGcAAAAFGdYWVoAAAGwAAAAFGJYWVoAAAHEAAAAFHJUUkMAAAHYAAAAIGNoYWQAAAH4AAAA
+LGJUUkMAAAHYAAAAIGdUUkMAAAHYAAAAIGRlc2MAAAAAAAAAC0Rpc3BsYXkgUDMAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUgSW5jLiwgMjAxNwAAWFlaIAAAAAAAAPNRAAEA
+AAABFsxYWVogAAAAAAAAg98AAD2/////u1hZWiAAAAAAAABKvwAAsTcAAAq5WFlaIAAAAAAAACg4AAAR
+CwAAyLlwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW3NmMzIAAAAAAAEMQgAABd7///MmAAAH
+kwAA/ZD///ui///9owAAA9wAAMBu0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc18QEE5TQml0bWFwSW1h
+Z2VSZXCjJykqWk5TSW1hZ2VSZXBYTlNPYmplY3TSJSYsLVdOU0FycmF5oiwq0iUmLzBeTlNNdXRhYmxl
+QXJyYXmjLywq1TIzNDUKNjc4OTpXTlNXaGl0ZVxOU0NvbXBvbmVudHNcTlNDb2xvclNwYWNlXxASTlND
+dXN0b21Db2xvclNwYWNlRDAgMABDMCAwEAOADIAQ1Dw9Pgo/QEFCVE5TSURVTlNJQ0NXTlNNb2RlbBAJ
+gA0QAIAP0kQKRUZXTlMuZGF0YU8REWgAABFoYXBwbAIAAABtbnRyR1JBWVhZWiAH3AAIABcADwAuAA9h
+Y3NwQVBQTAAAAABub25lAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVkZXNjAAAAwAAAAHlkc2NtAAABPAAAB+hj
+cHJ0AAAJJAAAACN3dHB0AAAJSAAAABRrVFJDAAAJXAAACAxkZXNjAAAAAAAAAB9HZW5lcmljIEdyYXkg
+R2FtbWEgMi4yIFByb2ZpbGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbWx1YwAAAAAAAAAfAAAADHNrU0sA
+AAAuAAABhGRhREsAAAA4AAABsmNhRVMAAAA4AAAB6nZpVk4AAABAAAACInB0QlIAAABKAAACYnVrVUEA
+AAAsAAACrGZyRlUAAAA+AAAC2Gh1SFUAAAA0AAADFnpoVFcAAAAeAAADSm5iTk8AAAA6AAADaGNzQ1oA
+AAAoAAADomhlSUwAAAAkAAADyml0SVQAAABOAAAD7nJvUk8AAAAqAAAEPGRlREUAAABOAAAEZmtvS1IA
+AAAiAAAEtHN2U0UAAAA4AAABsnpoQ04AAAAeAAAE1mphSlAAAAAmAAAE9GVsR1IAAAAqAAAFGnB0UE8A
+AABSAAAFRG5sTkwAAABAAAAFlmVzRVMAAABMAAAF1nRoVEgAAAAyAAAGInRyVFIAAAAkAAAGVGZpRkkA
+AABGAAAGeGhySFIAAAA+AAAGvnBsUEwAAABKAAAG/HJ1UlUAAAA6AAAHRmVuVVMAAAA8AAAHgGFyRUcA
+AAAsAAAHvABWAWEAZQBvAGIAZQBjAG4A4QAgAHMAaQB2AOEAIABnAGEAbQBhACAAMgAsADIARwBlAG4A
+ZQByAGkAcwBrACAAZwByAOUAIAAyACwAMgAgAGcAYQBtAG0AYQBwAHIAbwBmAGkAbABHAGEAbQBtAGEA
+IABkAGUAIABnAHIAaQBzAG8AcwAgAGcAZQBuAOgAcgBpAGMAYQAgADIALgAyAEMepQB1ACAAaADsAG4A
+aAAgAE0A4AB1ACAAeADhAG0AIABDAGgAdQBuAGcAIABHAGEAbQBtAGEAIAAyAC4AMgBQAGUAcgBmAGkA
+bAAgAEcAZQBuAOkAcgBpAGMAbwAgAGQAYQAgAEcAYQBtAGEAIABkAGUAIABDAGkAbgB6AGEAcwAgADIA
+LAAyBBcEMAQzBDAEOwRMBD0EMAAgAEcAcgBhAHkALQQzBDAEPAQwACAAMgAuADIAUAByAG8AZgBpAGwA
+IABnAOkAbgDpAHIAaQBxAHUAZQAgAGcAcgBpAHMAIABnAGEAbQBtAGEAIAAyACwAMgDBAGwAdABhAGwA
+4QBuAG8AcwAgAHMAegD8AHIAawBlACAAZwBhAG0AbQBhACAAMgAuADKQGnUocHCWjlFJXqYAIAAyAC4A
+MgAggnJfaWPPj/AARwBlAG4AZQByAGkAcwBrACAAZwByAOUAIABnAGEAbQBtAGEAIAAyACwAMgAtAHAA
+cgBvAGYAaQBsAE8AYgBlAGMAbgDhACABYQBlAGQA4QAgAGcAYQBtAGEAIAAyAC4AMgXSBdAF3gXUACAF
+0AXkBdUF6AAgBdsF3AXcBdkAIAAyAC4AMgBQAHIAbwBmAGkAbABvACAAZwByAGkAZwBpAG8AIABnAGUA
+bgBlAHIAaQBjAG8AIABkAGUAbABsAGEAIABnAGEAbQBtAGEAIAAyACwAMgBHAGEAbQBhACAAZwByAGkA
+IABnAGUAbgBlAHIAaQBjAQMAIAAyACwAMgBBAGwAbABnAGUAbQBlAGkAbgBlAHMAIABHAHIAYQB1AHMA
+dAB1AGYAZQBuAC0AUAByAG8AZgBpAGwAIABHAGEAbQBtAGEAIAAyACwAMsd8vBgAINaMwMkAIKwQucgA
+IAAyAC4AMgAg1QS4XNMMx3xmbpAacHBepnz7ZXAAIAAyAC4AMgAgY8+P8GWHTvZOAIIsMLAw7DCkMKww
+8zDeACAAMgAuADIAIDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAgA5MDugPBA7kAIAOTA6wDvAO8A7EA
+IAAyAC4AMgBQAGUAcgBmAGkAbAAgAGcAZQBuAOkAcgBpAGMAbwAgAGQAZQAgAGMAaQBuAHoAZQBuAHQA
+bwBzACAAZABhACAARwBhAG0AbQBhACAAMgAsADIAQQBsAGcAZQBtAGUAZQBuACAAZwByAGkAagBzACAA
+ZwBhAG0AbQBhACAAMgAsADIALQBwAHIAbwBmAGkAZQBsAFAAZQByAGYAaQBsACAAZwBlAG4A6QByAGkA
+YwBvACAAZABlACAAZwBhAG0AbQBhACAAZABlACAAZwByAGkAcwBlAHMAIAAyACwAMg4jDjEOBw4qDjUO
+QQ4BDiEOIQ4yDkAOAQ4jDiIOTA4XDjEOSA4nDkQOGwAgADIALgAyAEcAZQBuAGUAbAAgAEcAcgBpACAA
+RwBhAG0AYQAgADIALAAyAFkAbABlAGkAbgBlAG4AIABoAGEAcgBtAGEAYQBuACAAZwBhAG0AbQBhACAA
+MgAsADIAIAAtAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAEcAcgBhAHkAIABHAGEA
+bQBtAGEAIAAyAC4AMgAgAHAAcgBvAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYA
+aQBsACAAcwB6AGEAcgBvAVsAYwBpACAAZwBhAG0AbQBhACAAMgAsADIEHgQxBEkEMARPACAEQQQ1BEAE
+MARPACAEMwQwBDwEPAQwACAAMgAsADIALQQ/BEAEPgREBDgEOwRMAEcAZQBuAGUAcgBpAGMAIABHAHIA
+YQB5ACAARwBhAG0AbQBhACAAMgAuADIAIABQAHIAbwBmAGkAbABlBjoGJwZFBicAIAAyAC4AMgAgBkQG
+SAZGACAGMQZFBicGLwZKACAGOQYnBkV0ZXh0AAAAAENvcHlyaWdodCBBcHBsZSBJbmMuLCAyMDEyAABY
+WVogAAAAAAAA81EAAQAAAAEWzGN1cnYAAAAAAAAEAAAAAAUACgAPABQAGQAeACMAKAAtADIANwA7AEAA
+RQBKAE8AVABZAF4AYwBoAG0AcgB3AHwAgQCGAIsAkACVAJoAnwCkAKkArgCyALcAvADBAMYAywDQANUA
+2wDgAOUA6wDwAPYA+wEBAQcBDQETARkBHwElASsBMgE4AT4BRQFMAVIBWQFgAWcBbgF1AXwBgwGLAZIB
+mgGhAakBsQG5AcEByQHRAdkB4QHpAfIB+gIDAgwCFAIdAiYCLwI4AkECSwJUAl0CZwJxAnoChAKOApgC
+ogKsArYCwQLLAtUC4ALrAvUDAAMLAxYDIQMtAzgDQwNPA1oDZgNyA34DigOWA6IDrgO6A8cD0wPgA+wD
++QQGBBMEIAQtBDsESARVBGMEcQR+BIwEmgSoBLYExATTBOEE8AT+BQ0FHAUrBToFSQVYBWcFdwWGBZYF
+pgW1BcUF1QXlBfYGBgYWBicGNwZIBlkGagZ7BowGnQavBsAG0QbjBvUHBwcZBysHPQdPB2EHdAeGB5kH
+rAe/B9IH5Qf4CAsIHwgyCEYIWghuCIIIlgiqCL4I0gjnCPsJEAklCToJTwlkCXkJjwmkCboJzwnlCfsK
+EQonCj0KVApqCoEKmAquCsUK3ArzCwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwSDCoMQwxcDHUMjgynDMAM
+2QzzDQ0NJg1ADVoNdA2ODakNww3eDfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8lD0EPXg96D5YPsw/PD+wQ
+CRAmEEMQYRB+EJsQuRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJFEmQShBKjEsMS4xMDEyMTQxNjE4MT
+pBPFE+UUBhQnFEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaPFrIW1hb6Fx0XQRdlF4kX
+rhfSF/cYGxhAGGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3Gp4axRrsGxQbOxtjG4obshvaHAIc
+KhxSHHscoxzMHPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+H2kflB+/H+ogFSBBIGwgmCDEIPAh
+HCFIIXUhoSHOIfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8JKsk2iUJJTglaCWXJccl9yYnJlcm
+hya3JugnGCdJJ3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAqAio1KmgqmyrPKwIrNitpK50r0SwFLDks
+biyiLNctDC1BLXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/HL/4wNTBsMKQw2zESMUoxgjG6MfIyKjJjMpsy
+1DMNM0YzfzO4M/E0KzRlNJ402DUTNU01hzXCNf02NzZyNq426TckN2A3nDfXOBQ4UDiMOMg5BTlCOX85
+vDn5OjY6dDqyOu87LTtrO6o76DwnPGU8pDzjPSI9YT2hPeA+ID5gPqA+4D8hP2E/oj/iQCNAZECmQOdB
+KUFqQaxB7kIwQnJCtUL3QzpDfUPARANER0SKRM5FEkVVRZpF3kYiRmdGq0bwRzVHe0fASAVIS0iRSNdJ
+HUljSalJ8Eo3Sn1KxEsMS1NLmkviTCpMcky6TQJNSk2TTdxOJU5uTrdPAE9JT5NP3VAnUHFQu1EGUVBR
+m1HmUjFSfFLHUxNTX1OqU/ZUQlSPVNtVKFV1VcJWD1ZcVqlW91dEV5JX4FgvWH1Yy1kaWWlZuFoHWlZa
+plr1W0VblVvlXDVchlzWXSddeF3JXhpebF69Xw9fYV+zYAVgV2CqYPxhT2GiYfViSWKcYvBjQ2OXY+tk
+QGSUZOllPWWSZedmPWaSZuhnPWeTZ+loP2iWaOxpQ2maafFqSGqfavdrT2una/9sV2yvbQhtYG25bhJu
+a27Ebx5veG/RcCtwhnDgcTpxlXHwcktypnMBc11zuHQUdHB0zHUodYV14XY+dpt2+HdWd7N4EXhueMx5
+KnmJeed6RnqlewR7Y3vCfCF8gXzhfUF9oX4BfmJ+wn8jf4R/5YBHgKiBCoFrgc2CMIKSgvSDV4O6hB2E
+gITjhUeFq4YOhnKG14c7h5+IBIhpiM6JM4mZif6KZIrKizCLlov8jGOMyo0xjZiN/45mjs6PNo+ekAaQ
+bpDWkT+RqJIRknqS45NNk7aUIJSKlPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQmfyaaJrVm0Kbr5wcnImc
+951kndKeQJ6unx2fi5/6oGmg2KFHobaiJqKWowajdqPmpFakx6U4pammGqaLpv2nbqfgqFKoxKk3qamq
+HKqPqwKrdavprFys0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LCszizrrQltJy1E7WKtgG2ebbwt2i3
+4LhZuNG5SrnCuju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDswWfB48JfwtvDWMPUxFHEzsVLxcjG
+RsbDx0HHv8g9yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE80b7SP9LB00TTxtRJ1MvV
+TtXR1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/gNuC94UThzOJT4tvjY+Pr5HPk
+/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XLx//KM8xnzp/Q09ML1
+UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//gA7SJSZISV1OU011dGFibGVEYXRh
+o0hKKlZOU0RhdGHSJSZMTVxOU0NvbG9yU3BhY2WiTipcTlNDb2xvclNwYWNl0iUmUFFXTlNDb2xvcqJQ
+KtIlJlNUV05TSW1hZ2WiUypfEA9OU0tleWVkQXJjaGl2ZXLRV1hUcm9vdIABAAgAEQAaACMALQAyADcA
+TABSAF0AZABrAHgAfwCHAIkAiwCQAJIAlACdAKIArQCvALEAswC4ALsAvQC/AMEAwwDIAN8A4QDjDa0N
+sg29DcYN2Q3dDegN8Q32Df4OAQ4GDhUOGQ4kDiwOOQ5GDlsOYA5kDmYOaA5qDnMOeA5+DoYOiA6KDowO
+jg6TDpsgByAJIA4gHCAgICcgLCA5IDwgSSBOIFYgWSBeIGYgaSB7IH4ggwAAAAAAAAIBAAAAAAAAAFkA
+AAAAAAAAAAAAAAAAACCFA
+</mutableData>
+        </image>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fqn-AK-95i"/>
+    </inferredMetricsTieBreakers>
+</document>

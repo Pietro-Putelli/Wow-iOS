@@ -1,0 +1,41 @@
+{
+  "locals": [{
+             
+             "id": 0,
+             "name": "Mission Chinese Food",
+             "localDescription": "Lorem ipsum dolor.",
+             "photograph": "img_02.jpg",
+             "address": "171 E Broadway, New York, NY 10002",
+             "timetable": "Lunedi al Sabato 08:00-12:00  e 14:00- 18:00 Domenica 08:00-12:00  e 14:00- 18:00",
+             "numberOfReviews": 10,
+             "numberInCity": 2,
+             "cityName": "New York",
+             "ratingValue": 4
+             },
+            {
+             "id": 1,
+             "name": "Emily",
+             "localDescription": "This is the oldest cliché of the writing profession, and I wish I didn't have to repeat it. Do not tell me that the Thanksgiving dinner was cold. Show me the grease turning white as it congeals around the peas on your plate. . . . Think of yourself as a movie director. You have to create the scene that the viewer will relate to physically and emotionallyThis is the oldest cliché of the writing profession, and I wish I didn't have to repeat it. Do not tell me that the Thanksgiving dinner was cold. Show me the grease turning white as it congeals around the peas on your plate. . . . Think of yourself as a movie directordinner was cold. Show me the grease turning white as it congeals around the peas on your plate. . . . Think of yourself as a movie directordinner was cold. Show me the grease turning white as it congeals around the peas on your plate. . . . Think of yourself as a movie director.",
+             "photograph": "img_01.jpg",
+             "address": "919 Fulton St, Brooklyn, NY 11238",
+             "timetable": "Lunedi al Sabato 08:00-12:00  e 15:00- 18:00 Domenica 08:00-12:00  e 15:00- 18:00",
+             "numberOfReviews": 12,
+             "numberInCity": 6,
+             "cityName": "New York",
+             "ratingValue": 3
+             },
+             {
+             "id": 2,
+             "name": "Da Bacco",
+             "localDescription": "This is the oldest cliché of the writing profession, and I wish I didn't have to repeat it. Do not tell me that the Thanksgiving dinner was cold. Show me the grease turning white as it congeals around the peas on your plate. . . . Think of yourself as a movie director. You have to create the scene that the viewer will relate to physically and emotionallyThis is the oldest cliché of the writing profession, and I wish I didn't have to repeat it. Do not tell me that the Thanksgiving dinner was cold. Show me the grease turning white as it congeals around the peas on your plate. . . . Think of yourself as a movie director.",
+             "photograph": "img_03.jpg",
+             "address": "919 Fulton St, Brooklyn, NY 11238",
+             "timetable": "Lunedi al Sabato 08:00-12:00  e 15:00- 18:00 Domenica 08:00-12:00  e 15:00- 18:00",
+             "numberOfReviews": 22,
+             "numberInCity": 7,
+             "cityName": "Gianico",
+             "ratingValue": 2
+             }
+            ]
+}
+

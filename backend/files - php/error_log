@@ -1,0 +1,9 @@
+[11-Oct-2018 16:38:17 UTC] PHP Notice:  Undefined index: profilePicturePath in /home/tb2w536j/public_html/php/userAccountUploadPHP_web.php on line 10
+[11-Oct-2018 16:38:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/tb2w536j/public_html/php/local_area_get_web.php on line 20
+[11-Oct-2018 16:38:37 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/tb2w536j/public_html/php/local_area_get_web.php on line 33
+[11-Oct-2018 16:39:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/tb2w536j/public_html/php/local_area_get_web.php on line 20
+[11-Oct-2018 16:39:27 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/tb2w536j/public_html/php/local_area_get_web.php on line 33
+[11-Oct-2018 16:39:54 UTC] PHP Notice:  Undefined index: profilePicturePath in /home/tb2w536j/public_html/php/userAccountUploadPHP_web.php on line 10
+[11-Oct-2018 16:40:40 UTC] PHP Notice:  Undefined index: profilePicturePath in /home/tb2w536j/public_html/php/userAccountUploadPHP_web.php on line 10
+[11-Oct-2018 16:42:18 UTC] PHP Notice:  Undefined index: profilePicturePath in /home/tb2w536j/public_html/php/userAccountUploadPHP_web.php on line 10
+[11-Oct-2018 16:47:00 UTC] PHP Notice:  Use of undefined constant ciao - assumed 'ciao' in /home/tb2w536j/public_html/php/userAccountUploadPHP_web.php on line 24
